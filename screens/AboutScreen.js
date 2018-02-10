@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import {View, Platform, Text} from 'react-native';
+import {View, Platform} from 'react-native';
 import {STATUS_BAR_HEIGHT} from '../constants';
 
 
-class MainScreen extends Component {
+class AboutScreen extends Component {
     static navigationOptions  = () => ({
 
-        title: 'Capo Keys',
+        title: 'About',
         headerStyle: {
             height: Platform.OS ==='android' ? 54 + STATUS_BAR_HEIGHT : 54,
             backgroundColor: '#2196F3'
@@ -15,7 +15,7 @@ class MainScreen extends Component {
             marginTop : Platform.OS == 'android' ? STATUS_BAR_HEIGHT : 0,
             color : 'white'
         },
-        headerLeft: <View><Text> Mainboard </Text></View>
+        headerLeft: <View>I</View>
 
     });
 
@@ -31,4 +31,4 @@ class MainScreen extends Component {
     }
 }
 
-export default MainScreen;
+export default AboutScreen;
